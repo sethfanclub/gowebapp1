@@ -1,0 +1,9 @@
+{{template "layout" .}}
+{{define "content"}}
+  <form method="POST">
+    <input type="text" name="question" placeholder="Enter question">
+    <input type="text" name="answer1" placeholder="Enter answer 1">
+    <input type="text" name="answer2" placeholder="Enter answer 2">
+    <button type="submit">Create Poll</button>
+  </form>
+{{end}}

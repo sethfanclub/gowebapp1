@@ -1,0 +1,8 @@
+{{template "layout" .}}
+{{define "content"}}
+  <h3>{{.Question.Content}}</h3>
+  {{range .Answers}}
+    <div>{{.Content}} {{.Votes}}</div>
+  {{end}}
+  <button onclick="window.location.href='/'">View Polls</button>
+{{end}}

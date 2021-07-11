@@ -1,0 +1,10 @@
+{{template "layout" .}}
+{{define "content"}}
+  <form method="POST">
+    <h3>{{.Question.Content}}</h3>
+    {{range .Answers}}
+      <div><input type="radio" name="answer" value="{{.ID}}">{{.Content}}</div>
+    {{end}}
+    <button type="submit">Vote</button>
+  </form>
+{{end}}

@@ -1,0 +1,14 @@
+{{template "layout" .}}
+{{define "content"}}
+  <form class="d-grid gap-3" method="POST">
+    <div class="form-group">
+      Username:
+      <input name="username" placeholder="Enter username" class="form-control" type="text">
+      Password:
+      <input name="password1" placeholder="Enter password" class="form-control" type="text">
+      Password (again):
+      <input name="password2" placeholder="Confirm password" class="form-control" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Register</button>
+  </form>
+{{end}}
